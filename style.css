@@ -1,0 +1,307 @@
+/* Reset de margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Container principal */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho - Botões */
+header {
+    background-color: gray; /* Azul */
+    padding: 20px;
+    border-bottom: 5px solid gray;
+    position: relative;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+}
+
+header h3 {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+
+/* Botões no cabeçalho */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    display: inline-block;
+    background-color: #1877F2; /* Verde */
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #007bff; /* Azul */
+    transform: scale(1.1);
+}
+
+/* Ícone do menu hambúrguer - tamanho reduzido */
+.hamburger-menu {
+    
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 25px; /* Menor largura */
+    height: 4px; /* Menor altura */
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+/* Categoria */
+.category {
+    margin-bottom: 50px;
+    padding: 20px 0;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.back h2 {
+    background-color: #212121;
+}
+
+.front h2 {
+    background-color: #007BFF;
+}
+
+.dados h2 {
+    background-color: #BDC3C7;
+}
+
+.dev h2 {
+    background-color: #607D8B;
+}
+
+.ux h2 {
+    background-color: #FFEB3B;
+}
+
+.digital h2{
+    background-color: #F44336;
+}
+
+.gestao h2 {
+    background-color: #E67E22;
+}
+
+.mobile h2 {
+    background-color: #1ABC9C;
+}
+.category h2 {
+     /* Verde */
+    color: white;
+    padding: 15px;
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Quadrinhos dos cursos */
+.course-box {
+    display: inline-block;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    width: 220px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.course-box:hover {
+    background-color: #f1f1f1;
+    transform: translateY(-5px);
+    border-color: #007bff; /* Azul */
+}
+
+.course-box p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Rodapé */
+footer {
+    background-color: #343a40; /* Cinza escuro */
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 50px;
+    border-top: 5px solid #007bff;
+}
+
+footer p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.whatsapp-link {
+    color: #25D366; /* Verde do WhatsApp */
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.whatsapp-link:hover {
+    text-decoration: underline;
+}
+
+/* Botão de WhatsApp */
+.whatsapp-button {
+    display: inline-block;
+    background-color: #25D366; /* Verde do WhatsApp */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E; /* Verde mais escuro */
+    transform: scale(1.05);
+}
+
+/* Estilo do botão de voltar ao topo */
+.back-to-top {
+    position: fixed;
+    bottom: 15px;  /* Distância do fundo */
+    right: 15px;   /* Distância da direita */
+    background-color: #007bff; /* Cor azul */
+    color: white;
+    border: none;
+    padding: 8px;  /* Menos padding para o botão ficar bem pequeno */
+    border-radius: 50%; /* Botão redondo */
+    font-size: 1.2em; /* Tamanho pequeno da seta */
+    cursor: pointer;
+    display: none; /* Inicialmente escondido */
+    transition: background-color 0.3s, transform 0.3s;
+    width: 40px;  /* Largura do botão */
+    height: 40px; /* Altura do botão */
+    text-align: center;
+    line-height: 24px; /* Centraliza a seta */
+}
+
+.back-to-top:hover {
+    background-color: #0056b3; /* Cor azul escuro */
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+    .category {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 9999; /* Aumentei o z-index para garantir que o menu fique acima de outros itens */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adicionei sombra para dar um destaque */
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    nav ul li a {
+        
+        background-color: #1877F2;
+        width: 180px;
+        font-size: 0.9rem;
+        padding: 12px;
+        border-radius: 8px;
+        display: inline-block;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    nav ul li a:hover {
+        background-color: #007bff;
+        transform: scale(1.05);
+    }
+
+    /* Exibir o menu hambúrguer */
+    .hamburger-menu {
+        display: block;
+    }
+
+    /* Mostrar o menu quando for clicado */
+    nav ul.show {
+        display: flex;
+    }
+
+    /* Garantir que o conteúdo abaixo do menu não seja coberto */
+    body {
+        position: relative;
+        z-index: 1;
+    }
+
+    /* Ajuste de espaçamento */
+    .container {
+        margin-top: 150px; /* Aumente o espaço entre o topo e o conteúdo */
+    }
+}
