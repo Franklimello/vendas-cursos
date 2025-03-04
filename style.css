@@ -34,6 +34,19 @@ header h1 {
     margin-bottom: 20px;
 }
 
+.preco {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.5em; /* Aumenta o tamanho da fonte */
+    color: #d32f2f; /* Vermelho chamativo */
+    font-weight: bold; /* Deixa o texto em negrito */
+    background-color: #ffebee; /* Fundo levemente rosado */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Cantos arredondados */
+     /* Mantém o fundo apenas ao redor do texto */
+  }
+  
+
 header h3 {
     text-align: center;
     font-weight: bold;
